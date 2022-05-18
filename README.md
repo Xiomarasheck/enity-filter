@@ -1,4 +1,4 @@
-# SoyYo Backend
+# Entity Filter
 Template containing the structure of the initial project to connect to the database and sequelize
 
 ## Construction
@@ -13,7 +13,7 @@ Next, in the projects to use exec the next command:
 ```sh
 npm install
 
-define environment variable STAGE with the environment
+define environment variable STAGE with the environment -- load files in config/env
 - DEV
 - QA
 - LOCAL
