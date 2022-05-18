@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Set environment variables for dev
+export APP_ENV=${1:-dev}
+
+echo "--> Execution docker file with environment '$APP_ENV'"
+
+if [ "$APP_ENV" = "dev" ]; then
+        docker build -t co.com.soyyo.entity.filter-dev-1_0_0 .
+        echo "--> Successful construction of the docker"
+elif [ "$APP_ENV" = "prod" ]; then
+        echo "--> It's not exist logic";
+else
+    echo "--> No compilation by environment variable assignment"
+fi

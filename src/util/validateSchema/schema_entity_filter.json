@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "startId": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20,
+            "errorMessage": {
+                "type": "The startId must be an array"
+            }
+        },
+        "endId": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 20,
+            "errorMessage": {
+                "type": "The endId must be an array"
+            }
+        }
+    },
+    "additionalProperties": true,
+    "required": [
+        "startId",
+        "endId"
+    ]
+}
