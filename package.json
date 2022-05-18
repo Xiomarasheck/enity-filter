@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "babel-node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nyc --require @babel/register  mocha ./test/test.js --exit",
     "build-docker": "sh ./bin/Dockerfile.dev"
   },
   "author": "Xiomara Gaona",

@@ -30,3 +30,6 @@ app.get('/develop/health', (_req, res) =>
 app.listen(api.SERVICE_PORT, () => {
     log.info(`Server is running on PORT ${api.SERVICE_PORT}`)
 })
+
+
+export default app
