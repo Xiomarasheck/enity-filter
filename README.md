@@ -24,7 +24,6 @@ define environment variable STAGE with the environment -- load files in config/e
 
 ### Build
 ```sh
-cd back/resources/soyyo_back/package/${name-folder-domain}/${name-folder-service}
 npm install
 npm run start
 ```
